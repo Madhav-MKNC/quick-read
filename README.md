@@ -70,7 +70,7 @@ Special thanks to the open-source community and contributors for their support a
 
 ## Support
 
-If you encounter any problems with the extension, please [create an issue](https://github.com/Madhav-MKNC/quick-read) on the GitHub repository.
+If you encounter any problems with the extension, please [create an issue](https://github.com/Madhav-MKNC/quick-read/issue) on the GitHub repository.
 
 ---
 
