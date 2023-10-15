@@ -1,3 +1,6 @@
+/*
+This function converts the selected text on a page bionic readable
+*/
 function makeFirst40PercentLettersBold() {
   var selectedText = window.getSelection();
   var range = selectedText.getRangeAt(0);
