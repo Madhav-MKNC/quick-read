@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Bionic Readable",
+  "version": "1.0",
+  "description": "Convert selected text into bionic readable format.",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ],
+  "icons": {
+    "256": "images/icon-256.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "256": "images/icon-256.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
