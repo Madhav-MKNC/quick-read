@@ -1,4 +1,4 @@
-function makeFirst40PercentLettersBold() {
+function convertToBionicReadable() {
   const selectedText = window.getSelection();
   const range = selectedText.getRangeAt(0);
   const content = range.cloneContents();
@@ -52,7 +52,7 @@ function findTextNodes(node: Node, textNodes: Node[]) {
 // Call the function to make the first 40% of letters in selected text bold
 // You can trigger this function using an event or user interaction on your webpage.
 // Example:
-// someButton.onclick = makeFirst40PercentLettersBold;
+// someButton.onclick = convertToBionicReadable;
 
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
