@@ -1,7 +1,8 @@
-# Chrome Extension: Quick-Read
+<h1 align='center'>Chrome Extension: Quick-Read</h1>
 
 <div align="center">
   <img src="imgs/icon-128.png" alt="Extension Logo" width="200">
+  <p>(Select a text, make it bionic, and read it quick)</p>
 </div>
 
 ## Overview
@@ -44,7 +45,7 @@ The selected text will be transformed into a bionic readable format instantly.
 ## Screenshots
 
 <div align="center">
-  <img src="imgs/screenshot.png" alt="Extension Logo" width="200">
+  <img src="imgs/screenshot.png" alt="Extension Logo" width="900">
 </div>
 
 ## License
