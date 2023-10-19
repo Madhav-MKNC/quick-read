@@ -56,8 +56,8 @@ function findTextNodes(node, textNodes) {
 // someButton.onclick = convertToBionicReadable;
 
 
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  if (request.enabled) {
-    convertToBionicReadable();
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.enableConversion) {
+    convertToBionicReadable(); // Call your conversion function here
   }
 });
