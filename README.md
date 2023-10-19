@@ -37,8 +37,8 @@ Embrace the future of web browsing with these key features:
 
 1. Navigate to a webpage in Chrome.
 2. Select any text on the webpage by clicking and dragging the mouse.
-3. Right-click on the selected text.
-4. In the context menu, click "Convert to Bionic Readable Text."
+3. Click on the extension icon.
+4. Click the 'quick-read' button.
 
 The selected text will be transformed into a bionic readable format instantly.
 
