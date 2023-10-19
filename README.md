@@ -1,7 +1,7 @@
 # Chrome Extension: Quick-Read
 
 <div align="center">
-  <img src="imgs/icon.png" alt="Extension Logo" width="200">
+  <img src="imgs/icon-128.png" alt="Extension Logo" width="200">
 </div>
 
 ## Overview
