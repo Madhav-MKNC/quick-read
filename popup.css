@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+}
+
+button#convertButton {
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button#convertButton:hover {
+    background-color: hotpink;
+}
+
+button#convertButton:active {
+    transform: scale(0.95);
+}

@@ -58,6 +58,10 @@ function findTextNodes(node, textNodes) {
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.enableConversion) {
-    convertToBionicReadable(); // Call your conversion function here
+    try {
+      convertToBionicReadable();
+    } catch (error) {
+      console.log("No text is selected", error);
+    }
   }
 });
