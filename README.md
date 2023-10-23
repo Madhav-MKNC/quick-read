@@ -35,7 +35,8 @@ Embrace the future of web browsing with these key features:
 
 ### Usage
 
-1. Navigate to a webpage in Chrome.
+0. Navigate to a webpage in Chrome.
+1. **After Installing the extension for the first time make sure the refresh the page once for loading the content-scripts of the extension.**
 2. Select any text on the webpage by clicking and dragging the mouse.
 3. Click on the extension icon.
 4. Click the 'quick-read' button.
