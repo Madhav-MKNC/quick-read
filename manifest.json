@@ -6,6 +6,15 @@
   "action": {
     "default_popup": "popup.html"
   },
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "mac": "Command+Q"
+      },
+      "description": "Toggle Bionic Readable"
+    }
+  },
   "permissions": [
     "activeTab"
   ],
@@ -21,5 +30,8 @@
         "content.js"
       ]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }
