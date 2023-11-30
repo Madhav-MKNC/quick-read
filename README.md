@@ -5,6 +5,17 @@
   <p>(Select a text, make it bionic, and read it quick)</p>
 </div>
 
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Screenshots](#screenshots)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Support](#support)
+
 ## Overview
 
 **Quick-Read** is a captivating Chrome extension designed to elevate your online reading experience. With a single click, it transforms mundane text into a stylish and visually engaging bionic readable format, making web content not only more exciting but also highly efficient.
@@ -37,9 +48,10 @@ Embrace the future of web browsing with these key features:
 
 0. Navigate to a webpage in Chrome.
 1. **After Installing the extension for the first time make sure the refresh the page once for loading the content-scripts of the extension.**
-2. Select any text on the webpage by clicking and dragging the mouse.
+2. Select any text on the webpage by clicking and dragging the mouse. (SKIP this step if modifying the whole page)
 3. Click on the extension icon.
 4. Click the 'quick-read' button.
+5. OR skin 3 and 4, and just use the shortcut command "CTRL + Q"
 
 The selected text will be transformed into a bionic readable format instantly.
 
