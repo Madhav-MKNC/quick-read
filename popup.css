@@ -2,7 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: black;
+    color: white;
+    background-color: #1E1E26;
+}
+
+.styled-element {
+    opacity: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px hotpink;
+    color: hotpink;
+    white-space: nowrap;
 }
 
 button#convertButton {
@@ -14,6 +28,9 @@ button#convertButton {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin: 10px 0;
 }
 
 button#convertButton:hover {
