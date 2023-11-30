@@ -1,16 +1,30 @@
 /*
-This function converts the selected text on a page bionic readable
+This function converts the selected text or the entire page (if no text is selected) to bionic readable format
 */
 function convertToBionicReadable() {
   var selectedText = window.getSelection();
-  var range = selectedText.getRangeAt(0);
-  var content = range.cloneContents();
 
-  var newNode = document.createElement("div");
-  newNode.appendChild(content);
+  if (!selectedText || selectedText.toString().trim() === '') {
+    // If no text is selected, convert the entire page
+    convertNode(document.body);
+  } else {
+    // If text is selected, convert only the selected text
+    var range = selectedText.getRangeAt(0);
+    var content = range.cloneContents();
 
+    var newNode = document.createElement("div");
+    newNode.appendChild(content);
+
+    convertNode(newNode);
+
+    range.deleteContents();
+    range.insertNode(newNode);
+  }
+}
+
+function convertNode(node) {
   var textNodes = [];
-  findTextNodes(newNode, textNodes);
+  findTextNodes(node, textNodes);
 
   textNodes.forEach(function (node) {
     var text = node.textContent;
@@ -35,9 +49,6 @@ function convertToBionicReadable() {
 
     node.parentNode.replaceChild(newText, node);
   });
-
-  range.deleteContents();
-  range.insertNode(newNode);
 }
 
 function findTextNodes(node, textNodes) {
@@ -50,18 +61,13 @@ function findTextNodes(node, textNodes) {
   }
 }
 
-// Call the function to make the first 40% of letters in a selected text bold
-// You can trigger this function using an event or user interaction on your webpage.
-// Example:
-// someButton.onclick = convertToBionicReadable;
-
-
+// Listener for messages from background script
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.enableConversion) {
     try {
       convertToBionicReadable();
     } catch (error) {
-      console.log("No text is selected", error);
+      console.error("Error during conversion", error);
     }
   }
 });
